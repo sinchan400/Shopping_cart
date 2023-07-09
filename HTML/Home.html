@@ -6,26 +6,34 @@
     <title>ECommerce Website</title>
     <!--Link to CSS-->
     <link href="../CSS/style.css" rel="stylesheet"/>
+    <link  rel="stylesheet" href="../CSS/cart.css"/>
     <!--Box Icons-->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="header">
         <div>
             <a href="#" class="logo" >Shopping cart</a>
-            <i class="bx bx-shopping-bag" id="cart-icon",data-quantity="0"></i>
+            <div><i class="bx bx-shopping-bag" id="cart-icon",data-quantity=0></i></div>
         </div>
-   
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="../HTML/Home.html">Home</a></li>
+                <li><a href="../HTML/Cart.html">Cart-details</a></li>
+            </ul>
+        </nav>
     </header>
     <!--Shopping section -->
     <section>
-        <div>
-            <h2 class="shop-product">Shopping products</h2>
+        <div class="Heading">
+            <h1 class="shop-product">Shopping products</h1>
         </div>
+        <br/>
+    </section>
         <div class="row">
             <div class="column">
-                <img src="../IMAGES/Schoolbag1.jpg" alt="Image not found"  width="200px" height="200px"/>
+                <img src="../IMAGES/Schoolbag1.jpg" alt="Image not found" width="200px" height="200px"/>
                 <h4>
                     School bag
                 </h4>
@@ -46,7 +54,7 @@
             </div>
             
             <div class="column">
-                <img src="../IMAGES/Schoolbag2.jpg" alt="Image not found"  width="200px" height="200px"/>
+                <img src="../IMAGES/Schoolbag2.jpg" alt="Image not found" width="200px" height="10px"/>
                 <h4>
                     School bag
                 </h4>
@@ -56,11 +64,11 @@
             <button type="button" class="button">Add to Cart</button>
             </div>
             <div class="column">
-                <img src="../IMAGES/Shopbag.jpg" alt="Image not found"  width="200px" height="200px"/>
+                <img src="../IMAGES/Umbrella2.jpg" alt="Image not found"  width="200px" height="200px"/>
                 <h4>
-                   Shopping bag
+                    Umbrella
                 </h4>
-                <span>₹500</span>
+                <span>₹500  </span>
                 <i class="bx bx-shopping-bag"></i>
             </br>
             <button type="button" class="button">Add to Cart</button>
@@ -98,12 +106,13 @@
             </br>
             <button type="button" class="button">Add to Cart</button>
             </div>
+            
             <div class="column">
-                <img src="../IMAGES/Umbrella2.jpg" alt="Image not found"  width="200px" height="200px"/>
+                <img src="../IMAGES/7rn594qe.png" alt="Image not found" width="200px" height="200px"/>
                 <h4>
-                    Umbrella
+                   Color Pencils
                 </h4>
-                <span>₹500  </span>
+                <span>₹150</span>
                 <i class="bx bx-shopping-bag"></i>
             </br>
             <button type="button" class="button">Add to Cart</button>

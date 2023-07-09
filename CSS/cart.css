@@ -1,0 +1,90 @@
+.shop-product{
+    color:black;
+    text-align:center;
+    font-family: 'Poppins', sans;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display:flex;
+}
+th{
+    text-align:left;
+    padding: 5px;
+    color: aliceblue;
+    margin-left: 400px;
+    background: orange;
+    font-weight: normal;
+}
+td{
+    padding: 10px 10px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: orange;
+    font-size: 12px;
+}
+td img{
+    width:80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content:flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width:100%;
+    max-width: 650px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .header.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(16, 15, 15);
+  }
+  .fa-solid{
+    color: orange;
+  }
+  .cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    border-radius: 3px;
+    width: 80px;
+  }
+  .cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: orange;
+    color: aliceblue;
+  }
