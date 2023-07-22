@@ -1,90 +1,72 @@
-.shop-product{
-    color:black;
-    text-align:center;
-    font-family: 'Poppins', sans;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital@1&family=Signika:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
 }
-table{
-    width:100%;
-    border-collapse: collapse;
-}
-.cart-info{
-    display:flex;
-}
-th{
-    text-align:left;
-    padding: 5px;
-    color: aliceblue;
-    margin-left: 400px;
-    background: orange;
-    font-weight: normal;
-}
-td{
-    padding: 10px 10px;
-}
-td input{
-    width: 40px;
-    height: 30px;
-    padding: 5px;
-}
-td a{
-    color: orange;
-    font-size: 12px;
-}
-td img{
-    width:80px;
-    height: 80px;
-    margin-right: 10px;
-}
-.total-price{
-    display: flex;
-    justify-content:flex-end;
-}
-.total-price table{
-    border-top: 3px solid #ff523b;
-    width:100%;
-    max-width: 650px;
-}
-td:last-child{
-    text-align: right;
-}
-th:last-child{
-    text-align: right;
-}
-
-.header{
-    height: 50px;
-    width: 100%;
+.navbar{
     background-color: orange;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-  }
-  .header.logo{
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
     font-size: 30px;
-    font-weight: bold;
-    color: rgb(16, 15, 15);
-  }
-  .fa-solid{
-    color: orange;
-  }
-  .cart{
+}
+h5{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+    font-weight: 600;
+}
+.quantity{
+    width: 5rem;
+    
+}
+.close{
+    text-align: right;
+}
+.buttons{
     display: flex;
-    background-color: white;
+    justify-content: space-around;
+}
+.inputtag{
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 7px;
-    border-radius: 3px;
-    width: 80px;
-  }
-  .cart p{
-    height: 22px;
-    width: 22px;
+}
+.total{
+    background-color: rgb(216, 216, 221);
+    border-radius: 15px;
+}
+.total-content{
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 22px;
-    background-color: orange;
-    color: aliceblue;
+    height: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+.cart-content{
+    background-color: rgb(233, 57, 57);
+}
+.total>button{
+    display: block;
+    margin: 0 auto;
+    background-color:orange;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    padding:5px;
+    font-family: 'Lobster', cursive;
+    border-radius: 5px;
+}
+.message-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:15rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #33cc33;
+    color: #fff;
+    border-radius: 4px;
+    display: none;
   }

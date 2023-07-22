@@ -1,63 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital@1&display=swap');
+.nav-bar>h1{
+    font-family: 'Lobster', cursive;
+}
+.nav-bar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: orange;
+}
+body{
+    background-color: white;
+}
+.image{
+    display:flex;
+    justify-content: end;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'italic',cursive ;
-    font-size: 18px;
-}
-img{
-  max-width:   100%;
-  height: fit-content;
-  border-radius: 10px;
-  border: 1px solid rgb(200, 200, 200);
-}
-.column{
-  background-color: #ffb6c1;
-  width: 100%;
-  max-width: 300px;
-  tab-size: 200px;
-  padding: 20px;
-  border-radius: 25px;
-  box-sizing: fixed;
-  border-style: solid;
-  margin: 5px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-.row img{
-  max-width:   100%;
- 
-  border-radius: 10px;
-  border: 1px solid rgb(207, 207, 246);
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+  .message-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:15rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color:orange;
+    color: #fff;
+    border-radius: 4px;
+    display: none;
   }
-.row{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
+.amount{
+    font-weight: 1000;
+    font-family: monospace;
+    font-size: 2rem;
   }
-.button{
-  float:center;
-  display:inline-block;
-  background-color: white;
-  color: black;
-  padding: 10px;
-  width:50%;
-  text-align:center;
-}
-.heading{
-  text-align: center;
-}
-li{
-  display: inline;
-  padding-left:20px;
-}
-
-
-
+  .card-title{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+  }

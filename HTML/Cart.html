@@ -1,142 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECommerce Website</title>
-    <link  rel="stylesheet" href="../CSS/cart.css"/>
-    <link  rel="stylesheet" href="../CSS/style.css"/>
-    <script src="https://kit.fontawesome.com/92d70a2fd8.js"></script>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <title>Shopping-cart Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <link rel="stylesheet" href="../HTML/Home.html">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <i class='bx bxs-cart bx-lg'></i>
 </head>
-<body>
-    <header>
-    <div class="header">
-        <p class="logo">Shopping-cart</p>
-        <nav>
-            <ul class="MenuItems">
-                <li ><a href="../HTML/Home.html">Home</a></li>
-                <li><a href="../HTML/Cart.html">Cart-details</a></li>
-            </ul>
-        </nav>
-        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
-    </div>
-        </br>
-        <div class="Heading">
-            <h1 class="shop-product">Your Cart-details</h1>
-        </div> 
-        </br>
-    </header>
-       <!--div class="container">
-            <div id="root"></div>
-            <div class="sidebar">
-                <div class="head"><p>My cart</p></div>
-                <div id="cartItem">Your cart is empty</div>
-                <div class="foot">
-                    <h3>Total</h3>
-                    <h2 id="total">$0.00</h2>
-                </div>
-            </div>
-       </div>-->
-       <!-- Header -->
-    <!--header>
-        <div>
-            <a href="#" class="logo" >Shopping cart</a>
-            <div><i class="bx bx-shopping-bag" id="cart-icon",data-quantity=0></i></div>
-        </div>
-    </header>-->
-    <!--Shopping section -->
-    <section>
-        <!--class="Heading">
-            <h2 class="shop-product">Shopping products</h2>
-        </div>-->
-       <div class="small-container">
-       <table>
-        <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="..//IMAGES/dress1.jpg">
-                    <div>
-                        <p>Dress</p>
-                        <small>Price: $899</small>
-                    </br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$899.00</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="..//IMAGES/Umbrella.jpg">
-                    <div>
-                        <p>Umbrella</p>
-                        <small>Price: $400</small>
-                    </br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$400.00</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="..//IMAGES/dress.jpg">
-                    <div>
-                        <p>Dress</p>
-                        <small>Price: $999</small>
-                    </br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$999.00</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="..//IMAGES/metal_sunglass.jpg">
-                    <div>
-                        <p>Metal-sunglass</p>
-                        <small>Price: $500</small>
-                    </br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$500.00</td>
-        </tr>
-    </table>
 
-    <div class="total-price">
-        <table>
-            <tr>
-                <td>Subtotal</td>
-                <td>$200</td>
-            </tr>
-            <tr>
-                <td>Tax</td>
-                <td>$0</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>$200</td>
-            </tr>
-        </table>
-    </div>
-</div>
-    </section>
-    <script src="cartpage.js"></script>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <div class="navbar-brand">Your Cart Details</div>
+            <a href="../HTML/Home.html">
+                <box-icon name='home'></box-icon>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div id="productContainer" class="close"></div>
+        <div id="messageContainer" class="message-center"></div>
+        <script src="../JS/cartpage.js"></script>
 </body>
+
 </html>
